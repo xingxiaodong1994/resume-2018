@@ -1,0 +1,357 @@
+/* css样式初始化 */
+*{padding: 0;margin: 0;}
+*{box-sizing:border-box;}
+* ::before{box-sizing:border-box;}
+* ::after {box-sizing:border-box;}
+ol,ul{list-style:none;}
+a{text-decoration: none;color: inherit;}
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+/* 打印页面样式 */
+
+
+/* 导航条样式 */
+header nav{   
+    position:fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+header nav .logo{
+    font-family: "Hiragino Kaku Gothic Std";
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+}
+nav .logo span:nth-child(1){
+    color:#eecf8c;
+}
+nav .logo span:nth-child(2){
+    color:#b7b7b7;
+}
+header nav ul{
+    display: flex;
+    transition: all 0.3s;
+}
+header nav ul>li{
+    color:#dddbdb;
+    font-family: "Hiragino Kaku Gothic Std";
+    font-size: 12px;
+    line-height: 40px;
+    margin: 0 18px;   
+}
+header nav ul>li::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #e6686a;
+    transition: width 0.3s;
+}
+header nav ul>li:hover::after{
+    width: 100%;
+}
+
+/* 背景图 */
+header .bgImg{
+    width: 100%;
+    height:515px;
+    background-image: url(../img/2.jpg);
+    background-position: center center; 
+    background-size: cover;  
+}
+header .bgImg .mask{
+    width :100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+}
+
+/* 卡片样式 */
+main .card{
+    background: white;
+    max-width: 940px;
+    margin: 40px auto;
+    box-shadow: 2px 2px 16px 1px rgba(0,0,0,0.75);
+    margin-top: -340px;
+}
+main .card .content{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.card .content img{
+    height: 346px;
+}
+.card .content .text .hello{
+    display: inline-block;
+    background:#eecf8c;
+    text-align: center;
+    line-height: 30px;
+    color:white;
+    padding: 0 15px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.card .content .text .hello::after{   
+    content:'';
+    display: block;
+    width: 0;
+    position: absolute;
+    border:10px solid transparent;
+    border-left-color: #eecf8c;
+    border-top-width: 0;
+    left: 4px;
+    top:100%;
+}
+.card .content .text h1{
+    font-size: 2em;
+    font-weight: 400;
+}
+.card .content .text p{
+    margin: 20px 0;
+}
+.card .content .text hr{
+    border: 1px solid #dedede;
+}
+.card .content .text ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card .content .text ul>li{
+    font-weight: bold;
+    padding:8px 0;
+}
+.card .content .text ul>li:nth-child(odd){
+    width: 30%;  
+}
+.card .content .text ul>li:nth-child(even){
+    width: 70%;
+    color: rgba(102, 97, 97,0.8);
+}
+main .footer{
+    height: 70px;
+    background-color: #eecf8c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .footer a .icon{
+    box-sizing: content-box;
+    font-size: 32px;
+    fill:white;
+    margin: 0 25px;
+    border:4px solid #eecf8c;
+    border-radius: 50%; 
+}
+main .footer a:hover .icon{
+    box-sizing: content-box;
+    border:4px solid rgba(0,0,0,0.1); 
+    border-radius: 50%; 
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+
+}
+/* download */
+section.download{
+    margin: 40px 0 ;
+    text-align: center;
+}
+section.download  a{
+    background: #e7cd95b7;
+    display: inline-block;
+    border:1px solid rgba(163, 161, 161, 0.514);
+    font-weight: bold;
+    padding:30px 50px;
+    transition: box-shadow 0.2s;
+}
+section.download  a:hover{
+  cursor: pointer;
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+main .skills h2{
+    text-align: center;
+}
+main .skills .content{
+    display: flex;
+    padding: 40px;
+    background: white;
+    width: 100%;
+    max-width: 940px;
+    margin: 40px auto;
+    box-shadow: 2px 2px 16px 1px rgba(0,0,0,0.75);
+}
+.skills .content .echarts{
+    /* background: rgba(221, 221, 221, 0.466); */
+    /* border: 1px solid #ddd; */
+    /* box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2); */
+}
+.skills .content .skillsDescription{
+    width: 50%;
+    
+}
+.skills .content .skillsDescription ol>li{
+    padding: 10px;
+   
+}
+.skills .content .skillsDescription ol>li p{
+    margin-left: 2em;
+    margin-top: 1em;
+    font-family: 楷体;
+}
+
+/* works */
+section.works h2{
+    text-align: center;
+}
+
+.worksList{
+    max-width: 1000px;
+    margin: 40px auto;
+}
+.worksList > ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.worksList > ul > li{
+    flex: 1 0 50%;
+    padding:20px;
+}
+.worksList > ul > li figure:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+.worksList  ul > li  figure{
+   width: 100%;
+   display: flex;
+   /* flex-direction: row-reverse; */
+   flex-wrap: wrap;
+   align-items: flex-start;
+   border:1px solid #ddd;
+   background: #eee;
+   /* box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75); */
+
+}
+.worksList  ul > li  figure > img{
+    width: 30%;
+    flex:0.3;
+    /* flex-basis: 50%; */
+   
+}
+.worksList  ul > li  figure > figcaption{
+   flex:0.7;
+   /* flex-basis: 50%; */
+   /* width: 50%; */
+    
+}
+figure > figcaption h3{
+    padding: 10px;
+}
+figure > figcaption div{
+    padding: 10px;
+    text-overflow: ellipsis;
+}
+
+/* messages */
+.messages h2{
+    margin: 40px auto;
+    text-align: center;
+   
+}
+.messages .messageArea{
+    background: white;
+    max-width: 940px;
+    margin: 40px auto;
+    box-shadow: 2px 2px 16px 1px rgba(0,0,0,0.75);
+
+}
+.messageArea .messagebar{
+    
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom:1px solid #ddd;
+}
+.messageArea .messagebar img{
+    position: absolute;
+    top:20px;
+    left:70px;
+    width: 2em;
+    height: 2em;
+}
+.messageArea .messagebar .messageForm{
+    margin-left: 100px;  
+    padding: 20px;
+    display: flex;  
+}
+.messagebar .messageForm .messageContent{
+    padding: 0 10px;
+    font-size: 16px;
+    width: 600px;
+    line-height: 2.0;
+    border:1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    margin-right:20px ;
+}
+.messagebar .messageForm .messageContent:focus{
+    outline: none;
+   
+}
+.messagebar .messageForm .messageButton{
+    border:1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px 8px;
+    color: #aaa;
+    background: #F2F2F2;
+}
+.messagebar .messageForm .messageButton:focus{
+    outline: none;
+   
+   
+}
+.messagebar .messageForm .messageButton:hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+.messageArea #messageList{
+   
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.messageArea #messageList>li{
+    position: relative;
+    margin: 10px 0;
+   
+}
+.messageArea #messageList>li img{
+    position: absolute;
+    top:0px;
+    left:70px;
+    width: 2em;
+    height: 2em;
+}
+.messageArea #messageList>li span.name{
+    margin-left: 120px;
+    line-height: 2em;
+}
+.messageArea #messageList>li span.time{
+    margin-left: 520px;
+    line-height: 2em;
+    font-size: 14px;
+    color: #bbb;
+}
+.messageArea #messageList>li p{
+    padding: 10px 0;
+    margin-left: 120px; 
+    font-size: 16px;
+    line-height: 2.0; 
+}
