@@ -11,8 +11,6 @@ a{text-decoration: none;color: inherit;}
     fill: currentColor;
     overflow: hidden;
  }
-/* 打印页面样式 */
-
 
 /* 导航条样式 */
 header nav{   
@@ -70,6 +68,7 @@ header .bgImg .mask{
     height:100%;
     background-color:rgba(0,0,0,0.5);
 }
+
 
 /* 卡片样式 */
 main .card{
@@ -186,11 +185,7 @@ main .skills .content{
     margin: 40px auto;
     box-shadow: 2px 2px 16px 1px rgba(0,0,0,0.75);
 }
-.skills .content .echarts{
-    /* background: rgba(221, 221, 221, 0.466); */
-    /* border: 1px solid #ddd; */
-    /* box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2); */
-}
+
 .skills .content .skillsDescription{
     width: 50%;
     
