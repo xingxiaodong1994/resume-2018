@@ -131,6 +131,9 @@ let controller = {
     saveModel() {
         let messageForm = $(this.view.el).find('.messagebar #postMessageForm input[name="content"]')[0]
         let content = messageForm.value
+        if(!content){return}
+        content=content.trim()
+        content= content.replace(/[\-\_\,\!\|\~\`\(\)\#\$\%\^\&\*\{\}\:\;\"\L\<\>\?]/g, '')
         messageForm.value = ''
         //console.log(content)
         this.model.save({

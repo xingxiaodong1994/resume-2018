@@ -17,11 +17,11 @@
                 <span>1994</span>
             </div>
             <ul>
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">个人经历</a></li>
-                <li><a href="#">留言板</a></li>
+                <li><a href="#siteAbout">关于</a></li>
+                <li><a href="#siteSkills">技能</a></li>
+                <li><a href="#siteWorks">作品</a></li>
+                <li><a href="#siteExperience">个人经历</a></li>
+                <li><a href="#siteMessage">留言板</a></li>
             </ul>
         </nav>
         <div class="bgImg">
@@ -29,7 +29,7 @@
         </div>
     </header>
     <main>
-        <section class="card">
+        <section id="siteAbout" class="card">
             <div class="content">
                 <img src="./img/3.jpg" alt="图片">
 
@@ -71,7 +71,7 @@
         <section class="download">
             <a href="#">下载PDF简历</a>
         </section>
-        <section class='skills'>
+        <section id="siteSkills" class='skills'>
             <h2>主要技能</h2>
             <div class="content">
                 <div class='skillsDescription'>
@@ -101,9 +101,9 @@
             </div>
 
         </section>
-        <section class="works">
+        <section id="siteWorks" class="works">
             <h2>作品集</h2>
-            <div class="worksList">
+            <div  class="worksList">
                 <ul>
                     <li>
                         <figure>
@@ -186,8 +186,8 @@
                 </ul>
             </div>
         </section>
-       
-        <section class="description">
+
+        <section id="siteExperience" class="description">
             <h2>个人经历</h2>
             <div class="timeline">
                 <ol>
@@ -198,7 +198,7 @@
                             <div class="timePoint3"></div>
                             <div class="timePoint4">出生</div>
                             <div class="timePoint5">
-                                    1994.7 
+                                1994.7
                             </div>
                             <div class="text">
                                 出生在山西省晋城市
@@ -212,7 +212,7 @@
                             <div class="timePoint3"></div>
                             <div class="timePoint4">学习</div>
                             <div class="timePoint5">
-                                   2012.9-2016.6
+                                2012.9-2016.6
                             </div>
                             <div class="text">
                                 本科就读于北京交通大学，
@@ -227,11 +227,11 @@
                             <div class="timePoint3"></div>
                             <div class="timePoint4">工作</div>
                             <div class="timePoint5">
-                                    2016.6-2018.6
+                                2016.6-2018.6
                             </div>
                             <div class="text">
-                                   就职于北京首量科技有限公司，
-                                   做原料检验工作。
+                                就职于北京首量科技有限公司，
+                                做原料检验工作。
                             </div>
                         </div>
                     </li>
@@ -242,18 +242,18 @@
                             <div class="timePoint3"></div>
                             <div class="timePoint4">转行</div>
                             <div class="timePoint5">
-                                    2018.4-至今
+                                2018.4-至今
                             </div>
-                           <div class="text">
-                               自学前端知识半年，
-                               打算找一份前端开发工作
-                           </div>
+                            <div class="text">
+                                自学前端知识半年，
+                                打算找一份前端开发工作
+                            </div>
                         </div>
                     </li>
                 </ol>
             </div>
         </section>
-        <section class="messages">
+        <section id="siteMessage" class="messages">
             <h2>留言板</h2>
             <div class='messageArea'>
             </div>
@@ -261,12 +261,16 @@
     </main>
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/leancloud-storage/dist/av-min.js"></script>
+    <script src="./node_modules/@tweenjs/tween.js/src/Tween.js"></script>
     <script src="./js/initialize/AV.js"></script>
     <script src="./js/messages.js"></script>
     <script src="https://cdn.bootcss.com/echarts/4.1.0/echarts.min.js"></script>
     <script src="https://at.alicdn.com/t/font_757753_yjaurcmrlq9.js"></script>
     <script src="./resume.js"></script>
     <script src="./js/myCharts.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

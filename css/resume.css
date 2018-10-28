@@ -19,7 +19,16 @@ header nav{
     display: flex;
     justify-content: space-between;
     padding: 25px 20px;
+    transition: all 0.5s;
 }
+header nav.sticky{   
+    background: rgba(238, 238, 238, 0.966);
+    padding: 10px 20px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+   
+}
+
 header nav .logo{
     font-family: "Hiragino Kaku Gothic Std";
     font-size: 24px;
@@ -42,6 +51,9 @@ header nav ul>li{
     font-size: 12px;
     line-height: 40px;
     margin: 0 18px;   
+}
+header nav.sticky ul>li{
+    color:  #999898;
 }
 header nav ul>li::after{
     content: '';
@@ -261,7 +273,7 @@ figure > figcaption div{
 .messages .messageArea{
     background: white;
     max-width: 940px;
-    margin: 40px auto;
+    margin: 40px auto 250px;
     box-shadow: 2px 2px 16px 1px rgba(0,0,0,0.75);
 
 }
