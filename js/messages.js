@@ -1,8 +1,4 @@
-/*留言板模块 */
-//1建立model与数据库绑定
-//2初始化页面
-//3更新数据
-class EventHub {
+{class EventHub {
     constructor() {
         this.events = {}
     }
@@ -143,3 +139,4 @@ let controller = {
     }
 }
 controller.init({ 'view': view, 'model': model })
+}
