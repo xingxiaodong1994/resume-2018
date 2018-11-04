@@ -230,7 +230,6 @@ section.works h2{
     padding:20px;
 }
 .worksList > ul > li figure:hover{
-    cursor: pointer;
     box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
 }
 .worksList  ul > li  figure{
@@ -241,14 +240,41 @@ section.works h2{
    align-items: flex-start;
    border:1px solid #ddd;
    background: #eee;
+   overflow: hidden;
    /* box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75); */
 
 }
-.worksList  ul > li  figure > img{
+.worksList  ul > li  figure > div.img{
     width: 30%;
+    height: 178px;
     flex:0.3;
+    background: #aaa;
     /* flex-basis: 50%; */
    
+}
+.worksList  ul > li  figure > div.img.work1{
+    background:url(../img/music.jpg) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work2{
+    background:url(../img/weixin.png) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work3{
+    background:url(../img/huaban.jpg) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work4{
+    background:url(../img/picachu.png) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work5{
+    background:url(../img/slide.png) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work6{
+    background:url(../img/huaban.jpg) center center no-repeat;
+    background-size: cover;
 }
 .worksList  ul > li  figure > figcaption{
    flex:0.7;
