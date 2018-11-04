@@ -18,7 +18,7 @@
                                 <hr>
                                  <a href="http://xingxiaodong.com/dist/"> 手机端页面(手机端)
                                   </a>
-                                  <a href="http://xingxiaodong.com/dist/"> 管理员页面(电脑端)
+                                  <a href="http://xingxiaodong.com/dist/admin.html"> 管理员页面(电脑端)
                                   </a>                                                              
                                 </div>
                             </figcaption>
@@ -27,7 +27,7 @@
                     </li>
                     <li>
                         <figure>
-                        <img src="./img/music-10-29.jpg" alt="work1-picture">
+                        <img src="./img/weixin.png" alt="work2-picture">
                         <figcaption>
                             <h3>项目2：即时通讯(react框架)</h3>
                             <hr>
@@ -42,7 +42,7 @@
                     </li>
                     <li>
                         <figure>
-                            <img src="./img/work1.jpg" alt="work1-picture">
+                            <img src="./img/huaban.jpg" alt="work1-picture">
                             <figcaption>
                                 <h3>项目3：个人画板(canvas标签)</h3>
                                 <hr>
@@ -56,9 +56,9 @@
                     </li>
                     <li>
                         <figure>
-                            <img src="./img/work1.jpg" alt="work1-picture">
+                            <img src="./img/picachu.png" alt="work1-picture">
                             <figcaption>
-                                <h3>项目名称：项目xxx</h3>
+                                <h3>项目4：皮卡丘</h3>
                                 <hr>
                                 <div class="descript">
                                     描述：这是关于xxxxx的一个项目，使用了xxxx技术;取得了xxxxxx的效果。
