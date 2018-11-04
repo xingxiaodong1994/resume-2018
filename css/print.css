@@ -195,7 +195,7 @@ section.works h2{
 }
 .worksList > ul > li{
     /* flex: 1 0 50%; */
-    padding:50px;
+    padding:30px 50px;
 }
 .worksList  ul > li  figure{
    width: 100%;
@@ -208,17 +208,46 @@ section.works h2{
    /* box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75); */
 
 }
+/*
+.worksList  ul > li:nth-child(4){
+    display: none;
+}
 .worksList  ul > li:nth-child(5){
     display: none;
 }
 .worksList  ul > li:nth-child(6){
     display: none;
 }
-
-.worksList  ul > li  figure > img{
+*/
+.worksList  ul > li  figure > div.img{
     width: 30%;
     flex:0.3;
+    height: 178px;
     /* flex-basis: 50%; */ 
+}
+.worksList  ul > li  figure > div.img.work1{
+    background:url(../img/music.jpg) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work2{
+    background:url(../img/weixin.png) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work3{
+    background:url(../img/huaban.jpg) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work4{
+    background:url(../img/picachu.png) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work5{
+    background:url(../img/slide.png) center center no-repeat;
+    background-size: cover;
+}
+.worksList  ul > li  figure > div.img.work6{
+    background:url(../img/nav.png) center center no-repeat;
+    background-size: cover;
 }
 .worksList  ul > li  figure > figcaption{
    flex:0.7;    
