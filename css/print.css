@@ -192,8 +192,10 @@ section.works h2{
 .worksList > ul{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 .worksList > ul > li{
+    width: 100%;
     /* flex: 1 0 50%; */
     padding:30px 50px;
 }
@@ -250,14 +252,40 @@ section.works h2{
     background-size: cover;
 }
 .worksList  ul > li  figure > figcaption{
-   flex:0.7;    
+   flex:0.7;
+   width: 70%;  
+ 
 }
 figure > figcaption h3{
     padding: 10px;
 }
-figure > figcaption div{
+figure > figcaption div.descript{
     padding: 10px;
+    height: 83px;
     text-overflow: ellipsis;
+}
+figure > figcaption div.works-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    overflow: hidden;
+}
+figure > figcaption a{
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    outline: none;
+    -webkit-transition: .1s;
+    transition: .1s;
+    cursor: pointer;
+    line-height: 20px;
+    font-size: 14px;
+    flex-shrink: 0;
+    text-align: center;
+    color: #000;
+    background: #ddd;
+    border: 1px solid rgba(163, 161, 161, 0.514);
 }
 /* messages */
 .messages{
