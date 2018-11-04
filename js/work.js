@@ -71,7 +71,7 @@
                         <figure>
                             <img src="./img/work1.jpg" alt="work1-picture">
                             <figcaption>
-                                <h3>项目名称：项目xxx</h3>
+                                <h3>项目5：轮播图</h3>
                                 <hr>
                                 <div class="descript">
                                     描述：这是关于xxxxx的一个项目，使用了xxxx技术;取得了xxxxxx的效果。
@@ -84,7 +84,7 @@
                         <figure>
                             <img src="./img/work1.jpg" alt="work1-picture">
                             <figcaption>
-                                <h3>项目名称：项目xxx</h3>
+                                <h3>项目6：导航栏</h3>
                                 <hr>
                                 <div class="descript">
                                     描述：这是关于xxxxx的一个项目，使用了xxxx技术;取得了xxxxxx的效果。
