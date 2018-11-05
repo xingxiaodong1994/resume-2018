@@ -184,6 +184,9 @@ section.download  a:hover{
   cursor: pointer;
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
 }
+div.online{
+    display: none;
+}
 
 main .skills h2{
     text-align: center;
