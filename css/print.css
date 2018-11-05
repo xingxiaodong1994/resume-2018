@@ -136,11 +136,10 @@ main .card .content{
     color: rgba(102, 97, 97,0.8);
 }
 .card .online{
-    border: 1px solid red;
+    cursor: pointer;
     position: absolute;
-
-    top:0px;
-    left:0px;
+    top:125px;
+    right:170px;
  }
  .card .online a{
     display: inline-block;
