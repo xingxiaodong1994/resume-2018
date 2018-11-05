@@ -35,7 +35,7 @@ option = {
         // areaStyle: {normal: {}},
         data: [
             {
-                value: [80, 90, 60, 80, 60, 70],
+                value: [80, 90, 50, 60, 60, 70],
                 name: '技能掌握程度'
             }
         ]
