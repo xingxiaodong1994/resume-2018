@@ -296,9 +296,7 @@ figure > figcaption h3{
 figure > figcaption div.descript .descript-content{
     text-indent: 2em;
 }
-figure > figcaption div.descript{
 
-}
 figure > figcaption div.works-footer{
     display: flex;
     justify-content: space-around;
