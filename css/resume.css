@@ -229,7 +229,7 @@ section.works h2{
     flex-wrap: wrap;
 }
 .worksList > ul > li{
-    flex: 1 0 50%;
+    flex: 1 0 100%;
     padding:20px;
 }
 .worksList > ul > li figure:hover{
@@ -237,6 +237,7 @@ section.works h2{
 }
 .worksList  ul > li  figure{
    width: 100%;
+   height: 100%;
    display: flex;
    /* flex-direction: row-reverse; */
    flex-wrap: wrap;
@@ -248,8 +249,12 @@ section.works h2{
 
 }
 .worksList  ul > li  figure > div.img{
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     width: 30%;
-    height: 178px;
     flex:0.3;
     background: #aaa;
     /* flex-basis: 50%; */
@@ -288,10 +293,11 @@ section.works h2{
 figure > figcaption h3{
     padding: 10px;
 }
+figure > figcaption div.descript .descript-content{
+    text-indent: 2em;
+}
 figure > figcaption div.descript{
-    height: 83px;
-    padding: 10px;
-    text-overflow: ellipsis;
+
 }
 figure > figcaption div.works-footer{
     display: flex;
