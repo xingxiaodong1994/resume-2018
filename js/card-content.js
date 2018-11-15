@@ -2,7 +2,7 @@
     let view={
         el:"body>main>section#siteAbout>.content",
         template :`
-        <img src="./img/3.jpg" alt="图片">
+        <img src="./img/3.png" alt="图片">
         <div class="text">
             <div class="hello">你好！我是一名前端工程师</div>
             <h1>邢晓栋</h1>
